@@ -1,0 +1,19 @@
+<h1>Mr. Hodges' Hondas</h1>
+
+<% @cars.each do |car| %>
+  <article>
+    <header>
+      <h2><%= car.make %></h2>
+    </header>
+    <p>
+      <%= car.model %>
+    </p>
+    <table>
+      <tr>
+        <th>Year:</th>
+        <td><%= car.year %></td>
+      </tr>
+      <tr>
+          </table>
+  </article>
+<% end %>
