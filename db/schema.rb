@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190910001957) do
+ActiveRecord::Schema.define(version: 20190917231212) do
 
   create_table "cars", force: :cascade do |t|
     t.string "make"
@@ -18,6 +18,11 @@ ActiveRecord::Schema.define(version: 20190910001957) do
     t.integer "year"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "price"
+    t.string "color"
+    t.integer "mileage"
+    t.string "image_file_name", default: ""
+    t.text "description"
   end
 
 end
