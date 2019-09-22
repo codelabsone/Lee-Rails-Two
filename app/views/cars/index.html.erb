@@ -1,20 +1,26 @@
-<h1>Mr. Hodges' Hondas</h1>
-
 <% @cars.each do |car| %>
-  <article>
-    <header>
-      <h2><%= car.make %></h2>
-    </header>
-    <p>
-      <%= car.model %>
-    </p>
-    <table>
-      <tr>
-        <th>Year:</th>
-        <td><%= car.year %></td>
-      </tr>
-      <tr>
-          </table>
-  </article>  
+  <div class="row">
+    <div class="col-md-3">
+      <%= image_for(car) %>
+    </div>
+    <div class="col-md-9">
+      <h2><%= link_to("#{car.year} #{car.make} #{car.model}", car) %></h2>
+      <h3><%= price_for(car) %></h3>
+      <table>
+        <tr>
+          <th>Color:</th>
+          <td><%= car.color %></td>
+        </tr>
+        <tr>
+          <th>Mileage:</th>
+          <td><%= car.mileage %></td>
+        </tr>
+        <tr>
+          <th>Description:</th>
+          <td><%= car.description %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
 <% end %>
   <%= link_to "New", new_car_path(@car) %>
