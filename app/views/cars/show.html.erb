@@ -1,0 +1,32 @@
+<h2><%= "#{@car.year} #{@car.make} #{@car.model}" %></h2>
+
+<div class="row">
+  <div class="col-md-3">
+    <%= image_for(@car) %>
+  </div>
+  <div class="col-md-9">
+    <table class="show-page table">
+      <tr>
+        <th>Price:</th>
+        <td><%= price_for(@car) %></td>
+      </tr>
+      <tr>
+        <th>Mileage:</th>
+        <td><%= @car.mileage %></td>
+      </tr>
+      <tr>
+        <th>Color:</th>
+        <td><%= @car.color %></td>
+      </tr>
+      <tr>
+        <th>Description:</th>
+        <td><%= @car.description %></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<nav>
+  <%= link_to "All Cars", cars_path %> |
+  <%= link_to "Edit", edit_car_path(@car) %>
+</nav>
