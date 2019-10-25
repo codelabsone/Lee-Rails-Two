@@ -20,7 +20,7 @@ class CarsController < ApplicationController
   def new
     @car = Car.new
   end
-  
+
   def create
     @car = Car.create(car_params)
     redirect_to @car
@@ -29,6 +29,6 @@ class CarsController < ApplicationController
 
 private
 def car_params
-  params.require(:car).permit(:make, :model, :year, :price, :color, :description, :milage, :image_file_name)
+  params.require(:car).permit(:make, :model, :year, :price, :color, :description, :mileage, :image_file_name)
 end
 end

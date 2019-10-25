@@ -1,11 +1,11 @@
-<h2 class="show-page"><%= "#{@car.year} #{@car.make} #{@car.model}" %></h2>
+<h2><%= "#{@car.year} #{@car.make} #{@car.model}" %></h2>
 
 <div class="row">
   <div class="col-md-3">
     <%= image_for(@car) %>
   </div>
   <div class="col-md-9">
-    <table class="show-page">
+    <table class="show-page table">
       <tr>
         <th>Price:</th>
         <td><%= price_for(@car) %></td>

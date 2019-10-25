@@ -10,10 +10,10 @@ module CarsHelper
 
   def price_for(car)
     if car.price.blank?
-      "Call for price."
+      "Make An Offer."
     else
       number_to_currency(car.price)
-    end  
+    end
   end
 
 end
