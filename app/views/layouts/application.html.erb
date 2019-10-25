@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mr. Hodges' Hondas</title>
+    <title>BDS Hondas</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,9 +9,7 @@
   </head>
 
   <body>
-    <header>
-      <h1>Mr. Hodges' Hondas <span class="header-span">GOING OUT OF BUSINESS SALE!!!</span></h1>
-    </header>
+    <%= render 'layouts/header' %>
 
     <div class="container">
       <%= yield %>
