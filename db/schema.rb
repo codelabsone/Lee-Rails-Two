@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190917231212) do
+ActiveRecord::Schema.define(version: 20191111101713) do
 
   create_table "cars", force: :cascade do |t|
     t.string "make"
@@ -23,6 +23,33 @@ ActiveRecord::Schema.define(version: 20190917231212) do
     t.integer "mileage"
     t.string "image_file_name", default: ""
     t.text "description"
+  end
+
+  create_table "favorites", force: :cascade do |t|
+    t.integer "car_id"
+    t.integer "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["car_id"], name: "index_favorites_on_car_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.integer "stars"
+    t.text "comment"
+    t.integer "car_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.index ["car_id"], name: "index_reviews_on_car_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "password_digest"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

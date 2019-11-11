@@ -26,7 +26,34 @@
   </div>
 </div>
 
-<nav>
-  <%= link_to "All Cars", cars_path %> |
-  <%= link_to "Edit", edit_car_path(@car) %>
-</nav>
+<% if current_user %>
+  <% if @current_favorite %>
+    <%= button_to "Like", car_favorite_path(@car, @current_favorite), method: :delete %>
+  <% else %>
+    <%= button_to "Dislike", car_favorites_path(@car) %>
+  <% end %>
+<% end %>
+
+<h3>Average Review</h3>
+<p>
+  <%= format_average_stars(@car) %>
+</p>
+
+<h3>Reviews</h3>
+<p>
+  <%= link_to pluralize(@car.reviews.size, "review"),
+              car_reviews_path(@car) %>
+</p>
+
+<footer>
+  <%= link_to "Write Review", new_car_review_path(@car),
+              class: 'button ok review' %>
+  <nav>
+    <% if current_user_admin? %>
+      <%= link_to 'Edit', edit_car_path(@car), class: 'button' %>
+      <%= link_to 'Delete', @car,
+                  class: 'button',
+                  method: :delete, data: { confirm: 'Are you sure?' } %>
+    <% end %>
+  </nav>
+</footer>
