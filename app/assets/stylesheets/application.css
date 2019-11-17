@@ -17,4 +17,5 @@
   *= require cars
   *= require buttons
   *= require forms
+  *= require bootstrap.min 
  */
