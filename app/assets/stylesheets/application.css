@@ -10,12 +10,17 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require_tree .
  *= require_self
+  *=require_colors
   *= require normalize
   *= require layout
   *= require elements
   *= require cars
   *= require buttons
   *= require forms
-  *= require bootstrap.min 
+  *= require bootstrap.min
+  *= require favorites
+  *= require reviews
+  *= require users
  */

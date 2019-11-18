@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191111101713) do
+ActiveRecord::Schema.define(version: 20191118002110) do
 
   create_table "cars", force: :cascade do |t|
     t.string "make"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20191111101713) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
   end
 
 end

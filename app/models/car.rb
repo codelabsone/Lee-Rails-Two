@@ -3,9 +3,9 @@ class Car < ApplicationRecord
   has_many :favorites, dependent: :destroy
   has_many :fans, through: :favorites, source: :user
 
-  def to_param
-  "#{id}-#{make.parameterize}"
-  end
+  # def to_param
+  # "#{id}-#{make.parameterize}"
+  # end
 
   def self.recently_added
   order('created_at desc').limit(3)
