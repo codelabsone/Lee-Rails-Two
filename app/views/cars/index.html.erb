@@ -17,10 +17,9 @@
         </tr>
         <tr>
           <th>Description:</th>
-          <td><%= car.description %></td>
+          <td><%= truncate(car.description, length: 200, separator: ' ') %></td>
         </tr>
       </table>
     </div>
   </div>
 <% end %>
-  

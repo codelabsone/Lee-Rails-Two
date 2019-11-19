@@ -1,7 +1,7 @@
 <%= form_for(@car, html: {class: "form-horizontal"}) do |f| %>
   <div class="form-group">
-     <%= f.label :body_type, class: "col-md-2" %>
-     <%= f.select :body_type, Car::BODY_TYPES, prompt: "Pick one", class: "col-md-10" %>
+     <%= f.label :type, class: "col-md-2" %>
+     <%= f.select :type, Car::TYPES, prompt: "Pick one", class: "col-md-10" %>
    </div>
   <div class="form-group">
     <%= f.label :make, class: "col-md-2" %>

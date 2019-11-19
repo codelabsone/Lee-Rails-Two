@@ -11,7 +11,13 @@
 @import "colors";
 
 /* carS */
-
+.col-md-3 {
+  padding-top: 5%;
+}
+.row {
+  background-color: #e0dadab3;
+  margin-bottom: 1%;
+}
 article.car {
   border: 5px solid #99585C;
   padding: 10px;

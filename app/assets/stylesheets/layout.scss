@@ -3,13 +3,15 @@
 body {
   color: $primary-text-color;
   background-image: linear-gradient(#f2709c, #ff9472);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
   font-family: "Helvetica Neue", Helvetica, Arial;
 }
 
 header#page-header {
   background-color: $secondary-background-color;
   padding: 40px 35px;
-
 
   }
   h1 a {
@@ -170,4 +172,14 @@ aside#sidebar {
       }
     }
   }
+}
+
+footer#page-footer {
+  position: inherit;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ff9472;
+  color: white;
+  text-align: center;
 }
