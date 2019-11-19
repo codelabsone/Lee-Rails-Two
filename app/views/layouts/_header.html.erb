@@ -19,13 +19,13 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shop By Type<span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%= link_to "Shop Sedans", filtered_cars_path(:sedan) %></li>
-              <li><%= link_to "Shop SUVS & Crossovers", filtered_cars_path(:suvs) %></li>
+              <li><%= link_to "Shop SUVS & Crossovers", filtered_cars_path(:suv) %></li>
               <li><%= link_to "Shop Coupes", filtered_cars_path(:coupe) %></li>
               <li><%= link_to "Shop Hatchbacks", filtered_cars_path(:hatchback) %></li>
-              <li><%= link_to "Shop Other", filtered_cars_path(:other) %></li>
+              <li><%= link_to "Shop Hybrids & Electric", filtered_cars_path(:hybrid) %></li>
             </ul>
           </li>
-          <li><%= link_to "View All New Inventory", filtered_cars_path(:new) %></li>
+          <li><%= link_to "View All New Inventory", filtered_cars_path(:recent) %></li>
           <li><%= link_to "View All Used Inventory", filtered_cars_path(:used) %></li>
         </ul>
 
