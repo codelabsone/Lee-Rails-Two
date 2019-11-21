@@ -1,0 +1,48 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.row.welcome {
+  background-color: transparent;
+
+  .thumbnail {
+    height: 300px;
+    border-radius: 15px;
+    background-color: #e0dada47;
+    border: 0px;
+
+    img {
+      width: 75%;
+    }
+    .thumbnail-image {
+      min-height: 45%;
+      padding-left: 25%;
+      padding-top: 10%;
+    }
+  }
+}
+
+div.caption {
+  text-align: center;
+  h3 {
+    color:#42403e;
+    a {
+      color: #42403e;
+    }
+  }
+}
+
+.jumbotron {
+  background-color: #e0dada47;
+  border-radius: 15px;
+
+  h1 {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+
+span.welcome {
+  font-family: 'Lobster', cursive;
+}

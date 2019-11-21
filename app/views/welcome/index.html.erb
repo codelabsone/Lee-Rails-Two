@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1>Welcome to <span class = "welcome">BDS Hondas</span></h1>
+  <p>Formerly Known as "Mr. Hodges' Hondas". Now under new management!</p>
+  <p>Check out our Featured Vehicles below!</p>
+</div>
+<div class="row welcome">
+  <% @cars.each do |car| %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <div class="thumbnail-image">
+          <%= image_for(car) %>
+        </div>
+        <div class="caption">
+          <h3><%= link_to "#{car.year} #{car.model}", car %></h3>
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
