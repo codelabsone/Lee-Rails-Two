@@ -19,13 +19,13 @@
      <% end %>
     </ol>
   <% end %>
-  
+
   <% if @favorite_cars.any? %>
   <h3>Favorite cars</h3>
   <ul>
    <% @favorite_cars.each do |car| %>
      <li>
-       <%= link_to car.make, car %>
+       <%= link_to "#{car.year} #{car.model}", car %>
      </li>
    <% end %>
   </ul>

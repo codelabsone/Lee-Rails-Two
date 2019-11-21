@@ -2,7 +2,7 @@
 
 a.button {
   display: inline-block;
-  border: 1px $subdued-color solid;
+  border: 1px #42403e solid;
   border-radius: 4px;
   padding: 4px 6px;
   text-decoration: none;
@@ -45,6 +45,12 @@ a.button {
       color: #eb8664
     }
   }
+}
 
-
+nav a.button {
+  border-color: #42403e;
+  &:hover {
+  background-color: transparent;
+  color: #42403e;
+}
 }

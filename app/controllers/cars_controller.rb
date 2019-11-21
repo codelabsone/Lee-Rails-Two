@@ -22,6 +22,9 @@ class CarsController < ApplicationController
 
   def show
     @car = Car.find(params[:id])
+    if current_user
+      @current_favorite = current_user.favorites.find_by(car_id: @car.id)
+    end
   end
 
   def edit

@@ -21,7 +21,6 @@ class Car < ApplicationRecord
 
   scope :hybrid, ->{ where(type: 'Hybrid') }
 
-  # scope :
 
   def self.recently_added
   order('created_at desc').limit(3)
