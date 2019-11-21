@@ -1,5 +1,5 @@
 <header id="content-header">
-  <h1>New Review for <%= link_to @car.title, @car %></h2>
+  <h1>New Review for <%= link_to @car.make, @car %></h2>
 </header>
 
 <%= form_for [@car, @review] do |f| %>
