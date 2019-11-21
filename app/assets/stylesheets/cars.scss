@@ -12,7 +12,12 @@
 
 /* carS */
 .col-md-3 {
-  padding-top: 5%;
+  padding-top: 3%;
+  padding-left: 4%;
+}
+.col-md-3.show {
+  padding-bottom: 2%;
+  padding-top: 0%;
 }
 .row {
   background-color: #e0dadab3;

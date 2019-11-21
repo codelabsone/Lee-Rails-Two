@@ -183,3 +183,25 @@ footer#page-footer {
   color: white;
   text-align: center;
 }
+
+.row {
+  background-color: #e0dada47;
+  margin-bottom: 1%;
+  border-radius: 30px;
+  padding-top: 2%;
+}
+
+.navbar-default {
+    background-color: #f37496;
+    border-color: #f37496;
+    .navbar-nav>li>a {
+    color: #fff;
+    font-size: 1.5em;
+  }
+    .navbar-brand {
+    color: #FFF;
+    font-size: 2.5em;
+    font-family: 'Lobster', cursive;
+    text-decoration: none;
+  }
+}
