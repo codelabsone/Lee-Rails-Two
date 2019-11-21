@@ -32,11 +32,11 @@ header#page-header {
 
   a.button {
     margin-left: 10px;
-    border-color: $subdued-color;
+    border-color: #42403e;
     &:hover {
-      background-color: #000;
-      color: #fff;
-      border-color: #000;
+      background-color: transparent;
+      color: #42403e;
+      border-color: #42403e;
       text-decoration: none;
     }
   }
@@ -217,3 +217,8 @@ fieldset {
 .container {
   min-height: 598px;
 }
+
+.navbar-nav>li>a:hover {
+    color: #42403e;
+    background-color: transparent;
+  }

@@ -7,9 +7,10 @@ a.button {
   padding: 4px 6px;
   text-decoration: none;
   &:hover {
-    background-color: $subdued-color;
+    background-color: transparent;
     text-shadow: 0;
     text-decoration: underline;
+    color: #42403e;
   }
   &.ok {
 	  font-family: "Helvetica Neue", Helvetica, Arial;
