@@ -5,8 +5,9 @@ body {
   background-image: linear-gradient(#f2709c, #ff9472);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100vh;
+  max-height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial;
+  margin-bottom: 100px;
 }
 
 header#page-header {
@@ -175,13 +176,13 @@ aside#sidebar {
 }
 
 footer#page-footer {
-  position: inherit;
-  left: 0;
-  bottom: 0;
+  position: relative;
   width: 100%;
-  background-color: #ff9472;
+  bottom: 0;
+  background-color: #fc8d7a;
   color: white;
   text-align: center;
+  height: 100px;
 }
 
 .row {
@@ -204,4 +205,15 @@ footer#page-footer {
     font-family: 'Lobster', cursive;
     text-decoration: none;
   }
+}
+
+fieldset {
+  padding: 1.5em 1.5em;
+  background-color: #ccccc557;
+  border-radius: 30px;
+  border: 0;
+}
+
+.container {
+  min-height: 598px;
 }
